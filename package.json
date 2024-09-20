@@ -1,0 +1,29 @@
+{
+    "name": "rest_api",
+    "version": "1.0.0",
+    "description": "El mejor curso de node por 0Euros",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js",	
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "node",
+      "curso",
+      "midudev"
+    ],
+    "author": "Daniel Miguel Medina",
+    "license": "ISC",
+    "dependencies": {
+      "cors": "2.8.5",
+      "express": "4.20.0",
+      "picocolors": "^1.1.0",
+      "zod": "3.23.8"
+    },
+    "devDependencies": {
+      "nodemon": "^3.1.4",
+      "standard": "^17.1.0"
+    }
+    
+  }
+  

@@ -1,0 +1,39 @@
+GET http://localhost:1234/movies
+
+
+###Recuperar una pelicula por id
+
+GET http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+
+###Recuperar todas las peliculas por un genero
+
+GET http://localhost:1234/movies?genre=action
+
+### Crear nueva pelicula
+
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+    "title": "The Godfather",
+    "year": 1972,
+    "director": "Francis Ford Coppola",
+    "duration": 175,
+    "poster": "https://media.posterlounge.com/img/products/710000/707663/707663_poster.jpg",
+    "genre": [
+     "Crime", 
+     "Drama"
+    ]
+}
+
+
+###Actualizar una pelicula
+
+PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+    "title":"The Redemption",
+    "year": 1992
+}
