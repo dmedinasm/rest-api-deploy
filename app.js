@@ -24,6 +24,9 @@ app.use(cors(
 ))// middleware de cors
 app.disable('x-powered-by') // Deshabilitar el header X-powered-by
 
+app.get('/', (req, res) => {
+  res.redirect('/movies')
+})
 // Todos los recursos que sean MOVIES se identifican con /movies
 app.get('/movies', (req, res) => {
   /* const origin = req.header('origin')
